@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lue.animalsmart.Scanner_Activity">
+<include layout="@layout/activity_header"
+    android:id="@+id/include"></include>
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#ffffff"
+        android:textSize="21dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:text="QR SCANNER"
+        android:layout_marginTop="65dp"
+        android:background="#ff4081"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="24sp"
+        android:textColor="#ff4081"
+        android:layout_below="@+id/scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp" />
+</RelativeLayout>

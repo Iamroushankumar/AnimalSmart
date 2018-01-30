@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    tools:context="com.example.lue.animalsmart.Contact_Form">
+    <include layout="@layout/activity_header"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:hint="Subject"
+        android:inputType="textEmailSubject"
+       />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:ems="10"
+        android:hint="message"
+        android:gravity="top"
+        android:inputType="text|textLongMessage"
+        />
+
+    <Button
+        android:id="@+id/contactsend"
+        android:layout_width="100dp"
+        android:background="#ff0099cc"
+        android:layout_gravity="end"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical"
+    tools:context="com.example.lue.animalsmart.Register_Activity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/activity_header"></include>
+
+    <EditText
+        android:id="@+id/ename"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#ff4081"
+        android:layout_below="@+id/include2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/eemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ename"
+        android:layout_below="@+id/ename"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#ff4081" />
+
+    <EditText
+        android:id="@+id/ephone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/eemail"
+        android:layout_below="@+id/eemail"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textColor="#ff4081" />
+
+    <EditText
+        android:id="@+id/epass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ephone"
+        android:layout_below="@+id/ephone"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#ff4081" />
+
+    <EditText
+        android:id="@+id/ecpass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/epass"
+        android:layout_below="@+id/epass"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Renter Password"
+        android:inputType="textPassword"
+        android:textColor="#ff4081" />
+
+    <TextView
+        android:id="@+id/tlocation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bregister"
+        android:layout_alignEnd="@+id/bcancle"
+        android:layout_marginBottom="44dp"
+        android:gravity="center_horizontal"
+        android:hint="Get Location"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp"
+        android:layout_marginStart="51dp"
+        android:background="#ff0099cc"
+        android:text="REGISTER"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/bcancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bregister"
+        android:layout_alignBottom="@+id/bregister"
+        android:layout_alignEnd="@+id/ecpass"
+        android:background="#ff0099cc"
+        android:text="CANCLE"
+        android:textColor="#ffffff" />
+</RelativeLayout>
